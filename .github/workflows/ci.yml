@@ -8,11 +8,23 @@ jobs:
 
             - name: Checkout
               uses: actions/checkout@v4
+
+               - name: Setup Node.js
+                 uses: actions/setup-node@v4
+
+              - name: Install pnpm
+                run: | 
+                        npm install -g pnpm
+                        echo "$(npm bin -g)" >> $GITHUB_PATH
+                        echo "LIBGL_ALWAYS_INDIRECT=1" >> $GITHUB_ENV
+             - name: Install Dependencies
+                run: pnpm install --no-frozen-lockfile
              
             - name: Cypress Tests
               uses: cypress-io/github-action@v6
               with:
                   start: 'npm run dev'
+                  build: 'npm run build'
                   
             - uses: actions/upload-artifact@v4
               if: always()
