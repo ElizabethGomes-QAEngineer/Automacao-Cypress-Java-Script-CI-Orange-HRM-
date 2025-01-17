@@ -1,4 +1,4 @@
-# Automação Cypress JavaScript Orange HRM
+# Automação Cypress JavaScript Orange HRM com CI
 
 ![Texto alternativo](OrangeHRM.png)
 
