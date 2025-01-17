@@ -59,5 +59,5 @@ executar no modo headless (sem interface gráfica)
 npx cypress run 
 ```
 
-
+> **💡 NOTA:** **Para acessar CI click na branch " ci-last " após click em action**
 
