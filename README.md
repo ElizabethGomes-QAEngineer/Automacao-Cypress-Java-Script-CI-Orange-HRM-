@@ -64,6 +64,6 @@ npx cypress run
 
 
 
->
+> Após automação realizada com sucesso
 > **💡 NOTA:** **Para acessar CI click na branch " ci-last " após click em action**
 >
