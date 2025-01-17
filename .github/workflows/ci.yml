@@ -9,16 +9,11 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
-               - name: Setup Node.js
-                 uses: actions/setup-node@v4
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
 
-              - name: Install pnpm
-                run: | 
-                        npm install -g pnpm
-                        echo "$(npm bin -g)" >> $GITHUB_PATH
-                        echo "LIBGL_ALWAYS_INDIRECT=1" >> $GITHUB_ENV
-             - name: Install Dependencies
-                run: pnpm install 
+            - name: Install Dependencies
+              run: npm install
              
             - name: Cypress Tests
               uses: cypress-io/github-action@v6
