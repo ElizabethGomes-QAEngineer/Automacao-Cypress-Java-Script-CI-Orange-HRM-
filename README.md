@@ -58,3 +58,11 @@ executar no modo headless (sem interface gráfica)
 ```bash
 npx cypress run 
 ```
+
+
+
+>
+>**📜 ** **Nota**
+>Acessando CI através da branch **"ci-last"**
+>clicar em ***github/workflows**
+>clicar em git hub **"action**
