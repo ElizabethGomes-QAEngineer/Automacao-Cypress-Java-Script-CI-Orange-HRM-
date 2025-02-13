@@ -20,16 +20,15 @@ class myInfoPage {
      }
 
 
-    personalDetails(firstName,middleName,lastName) {
+personalDetails(firstName,middleName,lastName) {
 
               cy.get(this.selectorsList().genericField).eq(1).type(firstName)
               cy.get(this.selectorsList().genericField).eq(2).clear().type(middleName)
               cy.get(this.selectorsList().genericField).eq(3).clear().type(lastName)
 
-     }
+}
 
-
-    employeeData(employeeId,otherId,driveLicenseNumber) {
+employeeData(employeeId,otherId,driveLicenseNumber) {
 
               cy.get(this.selectorsList().genericField).eq(4).clear().type(employeeId)
               cy.get(this.selectorsList().genericField).eq(5).clear().type(otherId)
@@ -37,23 +36,23 @@ class myInfoPage {
               cy.get(this.selectorsList().genericData).eq(0).type('2024-10-10')
               cy.get(this.selectorsList().nationality).eq(0).click({force: true})
 
-     }
+}
 
-    employeeStatus() {
+employeeStatus() {
 
              cy.get(this.selectorsList().maritalStatus).eq(1).click({force:true})
              cy.get(this.selectorsList().genericData).eq(1).type('2024-10-10')
              cy.get(this.selectorsList().gender).eq(8).click()
 
-     }
+}
 
-    saveForm () {
+saveForm () {
 
              cy.get(this.selectorsList().saveButton).eq(1).click()
 
-     }
+}
 
-   }
+}
 
 
 export default myInfoPage

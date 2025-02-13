@@ -18,19 +18,20 @@ const myInfoPageInstance = new myInfoPage ()
 
 describe('Orange HRM',()=> {
  
+      
       beforeEach(() => {
-          
+
 
             loginPageInstance.acessLoginPage()
 
             const userData = loginPageInstance.getUserData().userSucess
             
             loginPageInstance.loginWithUser(userData.username,userData.password) 
-      
-      })
 
+      })
+          
     
-      it('Tests : dashBoard , acess my info , personal details ',()=> {
+       it('Tests : dashBoard , acess my info , personal details ',()=> {
 
 
             dashBoardPageInstance.dashBoardAcessVerification()
@@ -45,7 +46,7 @@ describe('Orange HRM',()=> {
      
             myInfoPageInstance.saveForm() 
 
-      })
+       })
 
 }) 
 

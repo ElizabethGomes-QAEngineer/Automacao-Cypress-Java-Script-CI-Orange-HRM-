@@ -11,17 +11,14 @@ class dashBoardPage {
                }
     }
 
-    dashBoardAcessVerification() {
+dashBoardAcessVerification() {
   
-
               cy.location('pathname').should('equal','/web/index.php/dashboard/index')
-
               cy.get(this.selectorsList().dashBoardLayout).should('be.visible')
-
               cy.get(this.selectorsList().dashBoardTopBar).click()
 
+}
 
-    }
 }
 
 export default dashBoardPage
