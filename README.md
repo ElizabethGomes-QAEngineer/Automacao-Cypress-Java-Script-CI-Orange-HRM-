@@ -1,4 +1,4 @@
-# Automação Cypress JavaScript Orange HRM
+# Automação Cypress JavaScript Orange HRM com CI
 
 ![Texto alternativo](OrangeHRM.png)
 
@@ -61,3 +61,8 @@ npx cypress run
 
 
 
+>
+>**📜 ** **Nota** Este Projeto possui **CI***:
+>Acessando CI através da branch **"ci-last"**
+>clicar em ***github/workflows**
+>clicar em git hub **"action**
